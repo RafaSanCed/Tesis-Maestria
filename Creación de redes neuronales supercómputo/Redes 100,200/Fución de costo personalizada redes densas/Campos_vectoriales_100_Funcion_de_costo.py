@@ -468,9 +468,9 @@ for i in range(0, 1):
         return [dX_dt, dY_dt]
 
     x_range_neg = 0
-    x_range_pos = 20
+    x_range_pos = 10
     y_range_neg = 0
-    y_range_pos =20
+    y_range_pos =10
 
     y1 = np.linspace(x_range_neg, x_range_pos, 100)
     y2 = np.linspace(y_range_neg, y_range_pos, 100)
@@ -522,8 +522,8 @@ print(new_predictions)
 # In[43]:
 
 
-y1 = np.linspace(0, 20, 100)
-y2 = np.linspace(0, 20, 100)
+y1 = np.linspace(0, 10, 100)
+y2 = np.linspace(0, 10, 100)
 Y1, Y2 = np.meshgrid(y1, y2)
 t1 = 0
 u, v = np.zeros(Y1.shape), np.zeros(Y2.shape)
@@ -536,8 +536,8 @@ v /= M
 plt.figure(figsize=(10,10))
 Q = plt.quiver(Y1, Y2, u, v, M, angles='xy')
 plt.title('Campo vectorial espacio fase Toggle Swich', fontsize=20)
-plt.xlim([0, 20])
-plt.ylim([0, 20])
+plt.xlim([0, 10])
+plt.ylim([0, 10])
 plt.xlabel('Concentración X')
 plt.ylabel('Concentración Y')
 
@@ -568,9 +568,9 @@ def f(t, y):
     return [dX_dt, dY_dt]
 
 x_range_neg = 0
-x_range_pos = 20
+x_range_pos = 10
 y_range_neg = 0
-y_range_pos = 20
+y_range_pos = 10
 
 y1 = np.linspace(x_range_neg, x_range_pos, 100)
 y2 = np.linspace(y_range_neg, y_range_pos, 100)
