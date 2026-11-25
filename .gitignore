@@ -1,3 +1,4 @@
-/Base de datos/
-/Base de datos con ruido/
-/Pruebas Dummies/
+/data/
+.ipynb_checkpoints/
+__pycache__/
+logs/
